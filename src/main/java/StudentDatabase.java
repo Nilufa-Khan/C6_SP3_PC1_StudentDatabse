@@ -5,7 +5,7 @@ public class StudentDatabase{
     public static void main(String[] args) {
         StudentDatabase database = new StudentDatabase();
         try {
-            database.insertIntoAddress();
+            database.insertIntoStudentDatabase();
         } catch (SQLException e) {
             e.printStackTrace();
         } catch (ClassNotFoundException e) {
@@ -22,7 +22,7 @@ public class StudentDatabase{
         return connection;
 
     }
-    public void insertIntoAddress() throws SQLException, ClassNotFoundException {
+    public void insertIntoStudentDatabase() throws SQLException, ClassNotFoundException {
         Statement stmt = getConnection().createStatement();
         System.out.println("Inserting records into the table...");
         String sql = "INSERT INTO student VALUES (1061, 'Zara', 'Jamuna', 18,860,26)";
