@@ -11,8 +11,7 @@ public class StudentDatabase{
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
-    }
-    public static Connection getConnection() throws ClassNotFoundException, SQLException {
+    }public static Connection getConnection() throws ClassNotFoundException, SQLException {
         Connection connection = null;
         Class.forName("com.mysql.cj.jdbc.Driver");
         String url = "jdbc:mysql://localhost:3306/school";
