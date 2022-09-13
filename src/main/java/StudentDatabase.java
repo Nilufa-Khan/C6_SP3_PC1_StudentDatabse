@@ -5,6 +5,7 @@ public class StudentDatabase{
     public static void main(String[] args) {
         StudentDatabase database = new StudentDatabase();
         try {
+
             database.insertIntoStudentDatabase();
         } catch (SQLException e) {
             e.printStackTrace();
